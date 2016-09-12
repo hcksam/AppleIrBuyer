@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.CookieManager;
@@ -88,20 +87,29 @@ public class WebViewActivity extends Activity {
 		webView.setWebViewClient(new WebViewClient() {
 			@Override
 			public void onPageStarted(WebView view, String url, Bitmap favicon) {
-				Toast.makeText(inst, url, Toast.LENGTH_LONG).show();
-				Log.w("hck url", url);
+//				Toast.makeText(inst, url, Toast.LENGTH_LONG).show();
+//				Log.w("hck url", url);
 			}
 
 			@Override
 			public void onPageFinished(WebView view, String url) {
 				super.onPageFinished(view, url);
+				Toast.makeText(inst, url, Toast.LENGTH_LONG).show();
+				String javaScript = "";
+				javaScript += "document.getElementById('aid-auth-widget-iFrame').contentWindow.document.getElementById('appleId').value = \"aaa@ibbs.hk\";";
+//				javaScript += "document.getElementById('aid-auth-widget-iFrame').contentWindow.document.getElementById('pwd').value = \"a123456A\";";
+//				javaScript += "document.getElementById('appleId2').value = \"aaa@ibbs.hk\";";
+				view.loadUrl("javascript:(function() {document.getElementById('aid-auth-widget-iFrame').onload = function() {" +
+						javaScript +
+						"};})()");
 			}
 		});
 
 		Bundle extras = getIntent().getExtras();
-		if (extras != null) {
-			String requestUrl = extras.getString("requestUrl");
-			requestUrl = "https://reserve-hk.apple.com/HK/zh_HK/reserve/iPhone?partNumber=MNQK2ZP%2FA&channel=1&rv=&path=&sourceID=&iPP=false&appleCare=&iUID=&iuToken=&carrier=&store=R428";
+//		if (extras != null) {
+//			String requestUrl = extras.getString("requestUrl");
+			String requestUrl = "https://reserve-hk.apple.com/HK/zh_HK/reserve/iPhone?partNumber=MNQK2ZP%2FA&channel=1&rv=&path=&sourceID=&iPP=false&appleCare=&iUID=&iuToken=&carrier=&store=R428";
+//			requestUrl = "http://ddns.toraou.com:8888/TestHtml/testIFrame.html";
 //			Log.w("hck url", requestUrl);
 //			Toast.makeText(this, requestUrl, Toast.LENGTH_LONG).show();
 			webView.loadUrl(requestUrl);
@@ -109,10 +117,10 @@ public class WebViewActivity extends Activity {
 //			String javaScript = "";
 //			javaScript += "document.getElementById('aid-auth-widget-iFrame').contentWindow.document.getElementById('appleId').value = \"aaa@ibbs.hk\";";
 //			javaScript += "document.getElementById('aid-auth-widget-iFrame').contentWindow.document.getElementById('pwd').value = \"a123456A\";";
-//			webView.loadUrl("javascript:(function() {$( document ).ready(function() { " +
+//			webView.loadUrl("javascript:(function() {document.addEventListener('DOMContentLoaded', function() { " +
 //					javaScript +
-//					"});})()");
-		}
+//					"});})");
+//		}
 	}
 
 	@SuppressLint("NewApi")
