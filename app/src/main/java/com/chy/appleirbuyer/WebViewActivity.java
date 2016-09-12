@@ -5,8 +5,10 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.CookieManager;
@@ -82,12 +84,34 @@ public class WebViewActivity extends Activity {
 		webView.clearHistory();
 		webView.setWebChromeClient(new JsPopupWebViewChrome());
 		webView.getSettings().setJavaScriptEnabled(true);
-		webView.setWebViewClient(new WebViewClient());
+//		webView.setWebViewClient(new WebViewClient());
+		webView.setWebViewClient(new WebViewClient() {
+			@Override
+			public void onPageStarted(WebView view, String url, Bitmap favicon) {
+				Toast.makeText(inst, url, Toast.LENGTH_LONG).show();
+				Log.w("hck url", url);
+			}
+
+			@Override
+			public void onPageFinished(WebView view, String url) {
+				super.onPageFinished(view, url);
+			}
+		});
 
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
 			String requestUrl = extras.getString("requestUrl");
+			requestUrl = "https://reserve-hk.apple.com/HK/zh_HK/reserve/iPhone?partNumber=MNQK2ZP%2FA&channel=1&rv=&path=&sourceID=&iPP=false&appleCare=&iUID=&iuToken=&carrier=&store=R428";
+//			Log.w("hck url", requestUrl);
+//			Toast.makeText(this, requestUrl, Toast.LENGTH_LONG).show();
 			webView.loadUrl(requestUrl);
+
+//			String javaScript = "";
+//			javaScript += "document.getElementById('aid-auth-widget-iFrame').contentWindow.document.getElementById('appleId').value = \"aaa@ibbs.hk\";";
+//			javaScript += "document.getElementById('aid-auth-widget-iFrame').contentWindow.document.getElementById('pwd').value = \"a123456A\";";
+//			webView.loadUrl("javascript:(function() {$( document ).ready(function() { " +
+//					javaScript +
+//					"});})()");
 		}
 	}
 
