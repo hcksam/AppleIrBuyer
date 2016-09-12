@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppleIrBuyer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="id_prompt">Select ID Type</string>
+
+    <string-array name="id_select_arrays">
+        <item name="idHongkongCard">Hong Kong ID Card</item>
+        <item name="macauIDCard">Macau ID Card</item>
+        <item name="travelPermitHKMacau">Mainland Travel Permit for Hong Kong and Macao residents</item>
+        <item name="entryExitPass">Entry Exit Pass for Mainland and Macao Residents</item>
+        <item name="passport">Passport (International Visitors)</item>
+    </string-array>
+    
+    <string-array name="timeslot_select_arrays">
+        <item>No Choose</item>
+        <item>9:00 AM - 9:30 AM</item>
+        <item>9:30 AM - 10:00 AM</item>
+        <item>10:00 AM - 10:30 AM</item>
+        <item>10:30 AM - 11:00 AM</item>
+        <item>11:00 AM - 11:30 AM</item>
+        <item>11:30 AM - 12:00 PM</item>
+        <item>12:00 PM - 12:30 PM</item>
+        <item>12:30 PM - 1:00 PM</item>
+        <item>1:00 PM - 1:30 PM</item>
+        <item>1:30 PM - 2:00 PM</item>
+        <item>2:00 PM - 2:30 PM</item>
+        <item>2:30 PM - 3:00 PM</item>
+        <item>3:00 PM - 3:30 PM</item>
+        <item>3:30 PM - 4:00 PM</item>
+        <item>4:00 PM - 4:30 PM</item>
+        <item>4:30 PM - 5:00 PM</item>
+        <item>5:00 PM - 5:30 PM</item>
+        <item>5:30 PM - 6:00 PM</item>
+        <item>6:00 PM - 6:30 PM</item>
+        <item>6:30 PM - 7:00 PM</item>
+        <item>7:00 PM - 7:30 PM</item>
+        <item>7:30 PM - 8:00 PM</item>
+        <item>8:00 PM - 8:30 PM</item>
+        <item>8:30 PM - 9:00 PM</item>
+    </string-array>
+
+</resources>

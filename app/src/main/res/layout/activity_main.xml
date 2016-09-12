@@ -1,0 +1,568 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="0,1,2,3,4,5" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:text="Iphone 7 Plus - IFC Mall(R428)"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/IFC_256_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/IFC_256_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/IFC_256_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/IFC_256_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/IFC_256_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/IFC_128_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/IFC_128_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/IFC_128_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/IFC_128_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/IFC_128_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView>
+            </TextView>
+
+            <Button
+                android:id="@+id/IFC_32_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/IFC_32_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/IFC_32_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/IFC_32_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:text="Iphone 7 Plus - Causeway Bay(R409)"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/CWB_256_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/CWB_256_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/CWB_256_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/CWB_256_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/CWB_256_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/CWB_128_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/CWB_128_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/CWB_128_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/CWB_128_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/CWB_128_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView>
+            </TextView>
+
+            <Button
+                android:id="@+id/CWB_32_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/CWB_32_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/CWB_32_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/CWB_32_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:text="Iphone 7 Plus - Canton Road(R499)"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/CR_256_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/CR_256_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/CR_256_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/CR_256_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/CR_256_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/CR_128_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/CR_128_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/CR_128_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/CR_128_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/CR_128_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView>
+            </TextView>
+
+            <Button
+                android:id="@+id/CR_32_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/CR_32_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/CR_32_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/CR_32_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:text="Iphone 7 Plus - Festival Walk(R485)"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/FW_256_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/FW_256_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/FW_256_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/FW_256_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/FW_256_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/FW_128_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/FW_128_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/FW_128_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/FW_128_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/FW_128_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView>
+            </TextView>
+
+            <Button
+                android:id="@+id/FW_32_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/FW_32_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/FW_32_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/FW_32_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:text="Iphone 7 Plus - New Town Plaza(R610)"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/NTP_256_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/NTP_256_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/NTP_256_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/NTP_256_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/NTP_256_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/NTP_128_Plus_JBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JBlack" />
+
+            <Button
+                android:id="@+id/NTP_128_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/NTP_128_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/NTP_128_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/NTP_128_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView>
+            </TextView>
+
+            <Button
+                android:id="@+id/NTP_32_Plus_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black" />
+
+            <Button
+                android:id="@+id/NTP_32_Plus_Sliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver" />
+
+            <Button
+                android:id="@+id/NTP_32_Plus_Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <Button
+                android:id="@+id/NTP_32_Plus_Pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView>
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/Refresh_Store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:text="Refresh" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
